@@ -7,20 +7,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        scroll-behavior: smooth;
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 font-sans">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-xl font-bold tracking-tighter text-blue-600">FS.</span>
-            <div class="space-x-8 hidden md:block">
-                <a href="#home" class="hover:text-blue-600 transition">Beranda</a>
-                <a href="#about" class="hover:text-blue-600 transition">Tentang</a>
-                <a href="#skills" class="hover:text-blue-600 transition">Kemampuan</a>
-                <a href="#experience" class="hover:text-blue-600 transition">Pengalaman</a>
-                <a href="mailto:emailanda@gmail.com" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Kontak</a>
+            <div class="space-x-8 hidden md:flex items-center">
+                <a href="#home" class="hover:text-blue-600 transition font-medium">Beranda</a>
+                <a href="#skills" class="hover:text-blue-600 transition font-medium">Keahlian</a>
+                <a href="#experience" class="hover:text-blue-600 transition font-medium">Pengalaman</a>
+                <a href="https://wa.me/6285966191000" target="_blank" class="bg-green-500 text-white px-5 py-2 rounded-full hover:bg-green-600 transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
             </div>
         </div>
     </nav>
@@ -28,118 +29,77 @@
     <section id="home" class="pt-32 pb-20 px-6">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center">
             <div class="md:w-2/3">
-                <h2 class="text-blue-600 font-semibold mb-2">Production Administration Specialist</h2>
+                <h2 class="text-blue-600 font-bold mb-2 tracking-wide uppercase text-sm">Professional Administration Specialist</h2>
                 <h1 class="text-5xl md:text-7xl font-extrabold mb-6 text-slate-900 leading-tight">
                     Fikri Sudrajat
                 </h1>
                 <p class="text-lg text-slate-600 mb-8 max-w-lg leading-relaxed">
-                    Mengoptimalkan efisiensi operasional melalui analisis data yang presisi dan integrasi teknologi AI modern. Pengalaman 7+ tahun dalam manajemen administrasi produksi.
+                    Ahli Administrasi Produksi dengan spesialisasi <strong>Advanced Excel</strong> dan <strong>AI Prompting</strong>. Berfokus pada akurasi data dan efisiensi laporan operasional.
                 </p>
-                <div class="flex space-x-4">
-                    <a href="#experience" class="bg-slate-900 text-white px-8 py-3 rounded-lg hover:bg-slate-800 transition shadow-lg">Lihat Pengalaman</a>
-                    <a href="#skills" class="border border-slate-300 px-8 py-3 rounded-lg hover:bg-slate-100 transition">Keahlian</a>
+                <div class="flex flex-wrap gap-4">
+                    <a href="https://wa.me/6285966191000" target="_blank" class="bg-green-600 text-white px-8 py-3 rounded-xl hover:bg-green-700 transition shadow-lg flex items-center gap-2">
+                        <i class="fab fa-whatsapp text-xl"></i> Hubungi WhatsApp
+                    </a>
+                    <a href="mailto:fikrisudra@gmail.com" class="bg-slate-900 text-white px-8 py-3 rounded-xl hover:bg-slate-800 transition shadow-lg flex items-center gap-2">
+                        <i class="fas fa-envelope text-xl"></i> Kirim Email
+                    </a>
                 </div>
             </div>
             <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
-                <div class="w-64 h-64 bg-blue-100 rounded-2xl rotate-3 flex items-center justify-center border-2 border-blue-200 shadow-xl">
-                    <i class="fas fa-user-tie text-7xl text-blue-400 -rotate-3"></i>
+                <div class="relative">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-2xl blur opacity-25"></div>
+                    <div class="relative w-64 h-64 bg-white rounded-2xl flex items-center justify-center border border-slate-100 shadow-2xl">
+                        <i class="fas fa-user-tie text-7xl text-blue-600"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-white py-12 border-y border-slate-100">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div class="text-center">
-                <p class="text-3xl font-bold text-slate-900">7+</p>
-                <p class="text-sm text-slate-500 uppercase tracking-widest">Tahun Pengalaman</p>
-            </div>
-            <div class="text-center">
-                <p class="text-3xl font-bold text-slate-900">100%</p>
-                <p class="text-sm text-slate-500 uppercase tracking-widest">Akurasi Data</p>
-            </div>
-            <div class="text-center">
-                <p class="text-3xl font-bold text-slate-900">AI-Ready</p>
-                <p class="text-sm text-slate-500 uppercase tracking-widest">Prompt Engineer</p>
-            </div>
-            <div class="text-center">
-                <p class="text-3xl font-bold text-slate-900">Expert</p>
-                <p class="text-sm text-slate-500 uppercase tracking-widest">MS Office</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-24 px-6 bg-slate-50">
+    <section id="skills" class="py-24 px-6 bg-white">
         <div class="max-w-6xl mx-auto">
-            <h3 class="text-3xl font-bold mb-12 text-center text-slate-900">Keahlian Utama</h3>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">Admin & Analysis</h4>
-                    <p class="text-slate-600 text-sm">Ahli dalam laporan produksi, analisis trend data, dan memastikan ketersediaan data strategis.</p>
+            <div class="text-center mb-16">
+                <h3 class="text-3xl font-bold text-slate-900 mb-4">Keahlian & Teknologi</h3>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-green-500 transition-colors group">
+                    <i class="fas fa-file-excel text-4xl text-green-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-2">Advanced Excel</h4>
+                    <p class="text-slate-600 text-sm italic">Pivot Tables, VLOOKUP/XLOOKUP, Data Visualization.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-purple-50 text-purple-600 rounded-lg flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">AI Prompting</h4>
-                    <p class="text-slate-600 text-sm">Menggunakan AI untuk mempercepat alur kerja administratif dan riset teknologi terkini.</p>
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-blue-500 transition-colors group">
+                    <i class="fas fa-robot text-4xl text-blue-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-2">AI Prompting</h4>
+                    <p class="text-slate-600 text-sm italic">Optimasi alur kerja menggunakan LLM untuk produktivitas.</p>
                 </div>
-                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition">
-                    <div class="w-12 h-12 bg-green-50 text-green-600 rounded-lg flex items-center justify-center mb-6 text-xl">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h4 class="text-xl font-bold mb-3">Tech Enthusiast</h4>
-                    <p class="text-slate-600 text-sm">Memahami HTML coding dan pembaruan gadget terbaru untuk optimasi alat kerja digital.</p>
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-purple-500 transition-colors group">
+                    <i class="fas fa-tasks text-4xl text-purple-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-2">Admin Staff</h4>
+                    <p class="text-slate-600 text-sm italic">Manajemen laporan produksi & koordinasi tim.</p>
+                </div>
+                <div class="p-8 rounded-2xl border border-slate-100 bg-slate-50 hover:border-orange-500 transition-colors group">
+                    <i class="fas fa-code text-4xl text-orange-600 mb-6 group-hover:scale-110 transition-transform"></i>
+                    <h4 class="text-xl font-bold mb-2">HTML Coding</h4>
+                    <p class="text-slate-600 text-sm italic">Fundamental coding untuk kustomisasi web/portfolio.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experience" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto">
-            <h3 class="text-3xl font-bold mb-16 text-center text-slate-900">Pengalaman Profesional</h3>
-            <div class="space-y-12">
-                <div class="relative pl-8 border-l-2 border-blue-600">
-                    <div class="absolute w-4 h-4 bg-blue-600 rounded-full -left-[9px] top-1"></div>
-                    <span class="text-sm font-bold text-blue-600 uppercase">2018 — Sekarang</span>
-                    <h4 class="text-2xl font-bold text-slate-900 mt-2">Production Administration</h4>
-                    <p class="text-slate-500 font-medium mb-4">Manufaktur / Industri</p>
-                    <ul class="text-slate-600 space-y-2 list-disc ml-5">
-                        <li>Mengelola sistem data produksi harian dengan tingkat akurasi 100%.</li>
-                        <li>Melakukan analisis prediktif untuk menjamin ketersediaan laporan di masa depan.</li>
-                        <li>Mengatur dokumentasi administrasi dan pengarsipan digital secara sistematis.</li>
-                    </ul>
-                </div>
-
-                <div class="relative pl-8 border-l-2 border-slate-200">
-                    <div class="absolute w-4 h-4 bg-slate-200 rounded-full -left-[9px] top-1"></div>
-                    <span class="text-sm font-bold text-slate-400 uppercase">Pendidikan</span>
-                    <h4 class="text-2xl font-bold text-slate-900 mt-2">SMA Negeri 16 Kabupaten Tangerang</h4>
-                </div>
+    <footer class="bg-slate-900 text-white py-16 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h4 class="text-3xl font-bold mb-6">Tertarik Bekerja Sama?</h4>
+            <p class="text-slate-400 mb-10 max-w-md mx-auto">Saya siap membantu pengelolaan data dan administrasi profesional di perusahaan Anda.</p>
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="https://wa.me/6285966191000" target="_blank" class="text-4xl hover:text-green-500 transition"><i class="fab fa-whatsapp"></i></a>
+                <a href="mailto:fikrisudra@gmail.com" class="text-4xl hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
             </div>
-        </div>
-    </section>
-
-    <footer class="bg-slate-900 text-white py-12 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-6 md:mb-0 text-center md:text-left">
-                <h4 class="text-2xl font-bold mb-2">Fikri Sudrajat</h4>
-                <p class="text-slate-400">Tangerang, Indonesia | Profesional Administrasi</p>
+            <div class="pt-8 border-t border-slate-800 text-slate-500 text-sm">
+                &copy; 2026 Fikri Sudrajat.
             </div>
-            <div class="flex space-x-6 text-2xl">
-                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-github"></i></a>
-                <a href="mailto:emailanda@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
-            </div>
-        </div>
-        <div class="mt-12 text-center text-slate-500 text-sm border-t border-slate-800 pt-8">
-            &copy; 2026 Fikri Sudrajat. Dibuat dengan semangat teknologi.
         </div>
     </footer>
 
 </body>
-                  </html>
-  
+</html>
