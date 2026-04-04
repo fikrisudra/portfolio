@@ -3,133 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fikri Sudrajat | Modern Portfolio</title>
+    <title>Fikri Sudrajat | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             min-height: 100vh;
         }
         .glass-card {
-            background: rgba(255, 255, 255, 0.55);
+            background: rgba(255, 255, 255, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.5);
             border-radius: 32px;
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
         }
         .glass-card:hover {
-            background: rgba(255, 255, 255, 0.7);
-            transform: translateY(-5px);
-            box-shadow: 0 15px 45px 0 rgba(31, 38, 135, 0.1);
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+            background: rgba(255, 255, 255, 0.85);
         }
-        .contact-link {
-            @apply flex items-center p-4 rounded-2xl transition-all duration-300;
-            background: rgba(255, 255, 255, 0.3);
+        .contact-btn {
+            @apply flex items-center gap-4 p-4 rounded-2xl w-full transition-all duration-300 border border-transparent;
+            background: rgba(255, 255, 255, 0.5);
         }
-        .contact-link:hover {
-            @apply bg-white shadow-sm scale-[1.02];
+        .contact-btn:hover {
+            @apply bg-white border-white shadow-sm scale-[1.02];
         }
     </style>
 </head>
-<body class="p-4 md:p-12 lg:p-20 flex items-center justify-center">
+<body class="p-6 md:p-12 lg:p-16 flex items-center justify-center">
 
     <div class="max-w-6xl w-full grid grid-cols-1 md:grid-cols-12 gap-6">
         
-        <div class="md:col-span-8 glass-card p-10 md:p-16 flex flex-col justify-center">
-            <div class="inline-block px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-700 text-[10px] font-black uppercase tracking-[0.2em] mb-8 w-fit">
-                Professional Portfolio 2026
+        <div class="md:col-span-8 glass-card p-10 md:p-14 flex flex-col justify-center">
+            <div class="inline-block px-3 py-1 rounded-full bg-blue-600/10 text-blue-600 text-[10px] font-black uppercase tracking-[0.2em] mb-6 w-fit">
+                Professional Overview
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter leading-none mb-6 text-slate-900">
-                Fikri <br> Sudrajat<span class="text-blue-500">.</span>
+                Fikri <br> Sudrajat<span class="text-blue-600">.</span>
             </h1>
-            <p class="text-lg text-slate-600 font-medium leading-relaxed max-w-md">
-                Production Administration Specialist. Memadukan presisi <span class="text-slate-900 font-bold italic">Data Analysis</span> dengan efisiensi <span class="text-slate-900 font-bold italic">AI Engineering</span>.
+            <p class="text-lg text-slate-500 font-medium leading-relaxed max-w-lg">
+                Spesialis Administrasi Produksi dengan rekam jejak 7+ tahun. Ahli dalam integrasi <strong>Advanced Excel</strong> dan efisiensi <strong>AI Engineering</strong>.
             </p>
         </div>
 
-        <div class="md:col-span-4 glass-card p-8 flex flex-col justify-between border-t-4 border-t-blue-500/30">
+        <div class="md:col-span-4 glass-card p-8 flex flex-col justify-between border-b-4 border-b-blue-500/20">
             <div>
-                <h3 class="text-xl font-extrabold tracking-tight mb-1 text-slate-800">Contact Hub</h3>
-                <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-8 text-balanced text-[10px]">Tangerang, Indonesia</p>
+                <h3 class="text-xl font-extrabold text-slate-800 mb-1">Contact Hub</h3>
+                <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-8">Tangerang, Indonesia</p>
             </div>
             
-            <div class="space-y-4">
-                <a href="https://wa.me/6285966191000" target="_blank" class="contact-link group">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-green-500/10 text-green-600 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-colors">
-                            <i class="fab fa-whatsapp text-xl"></i>
-                        </div>
-                        <span class="font-bold text-slate-700">WhatsApp</span>
+            <div class="space-y-3">
+                <a href="https://wa.me/6285966191000" target="_blank" class="contact-btn group">
+                    <div class="w-11 h-11 rounded-xl bg-green-500/10 text-green-600 flex items-center justify-center group-hover:bg-green-500 group-hover:text-white transition-all">
+                        <i class="fab fa-whatsapp text-xl"></i>
                     </div>
+                    <span class="font-bold text-slate-700">WhatsApp</span>
                 </a>
 
-                <a href="mailto:fikrisudra@gmail.com" class="contact-link group">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors">
-                            <i class="far fa-envelope text-xl"></i>
-                        </div>
-                        <span class="font-bold text-slate-700">Email</span>
+                <a href="mailto:fikrisudra@gmail.com" class="contact-btn group">
+                    <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-all">
+                        <i class="far fa-envelope text-xl"></i>
                     </div>
+                    <span class="font-bold text-slate-700">Email</span>
                 </a>
             </div>
 
-            <div class="mt-8 pt-6 border-t border-white/50">
-                <p class="text-[9px] text-slate-400 font-black uppercase tracking-[0.2em]">Response Time: &lt; 24h</p>
+            <div class="mt-8 pt-4 border-t border-slate-200/50">
+                <p class="text-[9px] text-slate-400 font-black uppercase tracking-[0.2em]">Ready to Collaborate</p>
             </div>
         </div>
 
-        <div class="md:col-span-4 glass-card p-8">
-            <div class="text-blue-500 mb-6 text-2xl"><i class="fas fa-table"></i></div>
-            <h4 class="text-lg font-extrabold mb-2 tracking-tight">Advanced Excel</h4>
-            <p class="text-sm text-slate-500 leading-relaxed font-medium">Expert dalam manajemen database produksi, Pivot, dan analisis prediktif.</p>
-        </div>
-
-        <div class="md:col-span-4 glass-card p-8 text-center flex flex-col items-center justify-center bg-white/30 border-dashed">
-            <p class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400 mb-2">Education</p>
-            <p class="text-sm font-extrabold text-slate-800 tracking-tight leading-snug">SMA Negeri 16 <br> Kabupaten Tangerang</p>
-        </div>
-
-        <div class="md:col-span-4 glass-card p-8">
-            <div class="text-indigo-500 mb-6 text-2xl"><i class="fas fa-microchip"></i></div>
-            <h4 class="text-lg font-extrabold mb-2 tracking-tight">AI Prompting</h4>
-            <p class="text-sm text-slate-500 leading-relaxed font-medium">Otomasi alur kerja administrasi menggunakan teknik prompt engineering modern.</p>
-        </div>
-
-        <div class="md:col-span-12 glass-card p-10 md:p-14 relative overflow-hidden">
-            <div class="flex flex-col md:flex-row gap-12 relative z-10">
+        <div class="md:col-span-12 glass-card p-10 md:p-12 relative overflow-hidden">
+            <div class="flex flex-col md:flex-row gap-10 items-start">
                 <div class="md:w-1/3">
-                    <p class="text-xs font-black uppercase tracking-[0.4em] text-blue-500 mb-4 text-[10px]">Professional Record</p>
-                    <h3 class="text-3xl font-extrabold tracking-tighter">Production <br> Administration</h3>
-                    <p class="text-[11px] font-bold text-slate-400 mt-2 uppercase italic">2018 — Present</p>
+                    <p class="text-[10px] font-black uppercase tracking-[0.4em] text-blue-500 mb-2">History</p>
+                    <h3 class="text-3xl font-extrabold tracking-tighter text-slate-900">Experience</h3>
                 </div>
-                <div class="md:w-2/3 space-y-6">
-                    <p class="text-slate-600 font-medium leading-relaxed italic">
-                        "Berdedikasi untuk memastikan integritas data laporan produksi dengan rapi dan terstruktur guna mendukung pengambilan keputusan manajemen di masa depan."
+                <div class="md:w-2/3 border-l border-slate-200 pl-8 md:pl-12">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h4 class="text-xl font-bold text-slate-800">Production Administration</h4>
+                        <span class="text-xs font-black text-blue-600 bg-blue-50 px-3 py-1 rounded-full self-start mt-2 md:mt-0">2018 — PRESENT</span>
+                    </div>
+                    <p class="text-slate-500 font-medium leading-relaxed mb-6 italic text-sm">
+                        Memastikan integritas laporan produksi harian terdokumentasi dengan presisi. Melakukan analisis data mendalam untuk proyeksi ketersediaan laporan di masa mendatang.
                     </p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                            <span class="text-sm font-bold text-slate-700 leading-snug">Analisis Data Historis & Prediktif</span>
-                        </div>
-                        <div class="flex items-start gap-3">
-                            <i class="fas fa-check-circle text-blue-500 mt-1"></i>
-                            <span class="text-sm font-bold text-slate-700 leading-snug">Manajemen Administrasi Profesional</span>
-                        </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-4 py-1.5 bg-white/50 rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500 border border-slate-100">Data Analysis</span>
+                        <span class="px-4 py-1.5 bg-white/50 rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500 border border-slate-100">Reporting</span>
+                        <span class="px-4 py-1.5 bg-white/50 rounded-lg text-[10px] font-bold uppercase tracking-wider text-slate-500 border border-slate-100">Admin Staff</span>
                     </div>
                 </div>
             </div>
-            <div class="absolute -right-10 -bottom-10 opacity-[0.03] pointer-events-none">
-                <i class="fas fa-chart-line text-[250px]"></i>
+        </div>
+
+        <div class="md:col-span-4 glass-card p-8 group">
+            <i class="fas fa-table text-2xl text-blue-500 mb-6 group-hover:scale-110 transition"></i>
+            <h4 class="text-lg font-extrabold mb-2 tracking-tight text-slate-800">Advanced Excel</h4>
+            <p class="text-xs text-slate-500 leading-relaxed font-medium">Manajemen database produksi, Pivot Tables, dan visualisasi data laporan.</p>
+        </div>
+
+        <div class="md:col-span-4 glass-card p-8 group">
+            <i class="fas fa-microchip text-2xl text-indigo-500 mb-6 group-hover:scale-110 transition"></i>
+            <h4 class="text-lg font-extrabold mb-2 tracking-tight text-slate-800">AI Prompting</h4>
+            <p class="text-xs text-slate-500 leading-relaxed font-medium">Otomasi administratif dan riset teknologi menggunakan metode Prompt Engineering.</p>
+        </div>
+
+        <div class="md:col-span-4 glass-card p-8 flex flex-col justify-between border-t-4 border-t-slate-800/10">
+            <div>
+                <p class="text-[9px] font-black uppercase tracking-[0.4em] text-slate-400 mb-4 text-center">Education</p>
+                <h4 class="text-md font-extrabold text-slate-800 text-center leading-snug">SMA Negeri 16 <br> Kabupaten Tangerang</h4>
+            </div>
+            <div class="mt-4 flex justify-center text-slate-200">
+                <i class="fas fa-graduation-cap text-xl"></i>
             </div>
         </div>
 
     </div>
 
 </body>
-                                                                                  </html>
+                </html>
     
